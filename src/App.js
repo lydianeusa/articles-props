@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import ArticlesList from "./ArticlesList";
+import HighlightArticle from "./HighlightArticle";
+
+const message="hello"
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+
+    const articles = [
+      {
+        title: "React Hooks",
+        content: "React Hooks are awesome!",
+      },
+      {
+        title: "React Context",
+        content: "React Context is awesome!",
+      },
+      {
+        title: "React Router",
+        content: "React Router is awesome!",
+      },
+    ];
+
+    return (
+      <div>
+        {message}
+        <p> coucou</p>
+        <ArticlesList articlesProp={articles}/>
+        <HighlightArticle firstArticleProp={articles[0]}/>
+      </div>
   );
 }
 
