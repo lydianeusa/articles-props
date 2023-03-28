@@ -27,7 +27,7 @@ function App() {
         {message}
         <p> coucou</p>
         <ArticlesList articlesProp={articles}/>
-        <HighlightArticle firstArticleProp={articles[0]}/>
+        <HighlightArticle articlesProp={articles}/>
       </div>
   );
 }

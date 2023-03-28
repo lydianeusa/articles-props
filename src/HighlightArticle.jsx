@@ -1,6 +1,6 @@
 const HighlightArticle = ({articlesProp}) => {
-    return(
-<h2>{articlesProp[0].title}</h2>
+    return( 
+        <h2>{articlesProp[0].title}</h2>
     )
 };
 
